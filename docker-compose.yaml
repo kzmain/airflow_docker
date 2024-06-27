@@ -120,6 +120,8 @@ services:
     command: webserver
     ports:
       - "8888:8080"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8888/health"]
       interval: 30s
