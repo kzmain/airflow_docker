@@ -12,3 +12,6 @@ RUN chmod -R 777 /opt/airflow/apache_airflow_providers_microsoft_azure
 USER 1001
 # 1.2 Use normal user permission to install the azure provider package
 RUN pip install apache_airflow_providers_microsoft_azure/dist/apache_airflow_providers_microsoft_azure-10.1.2-py3-none-any.whl
+
+# 2. Install Apache Airflow Datahub Provider Package
+RUN pip install 'acryl-datahub-airflow-plugin[plugin-v2]'
