@@ -1,0 +1,4 @@
+[submodule "airflow_kzmain"]
+	path = airflow_kzmain
+	url = https://github.com/kzmain/airflow.git
+	branch = add_region_cloud_support_for_azure_data_factory
